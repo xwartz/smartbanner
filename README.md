@@ -6,12 +6,13 @@ smartbanner like iOS's smart app banners
 
 ####usage
 
-######Safari
+###### Safari
 
 ```html
 <meta name="apple-itunes-app" content="app-id=yourappid">
 ```
 
+###### Other
 ```js
 var banner = {
     icon: null,               // the url of the app icon
