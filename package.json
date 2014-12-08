@@ -1,0 +1,15 @@
+{
+  "name": "smartbanner",
+  "description": "smartbanner",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xwartz",
+  "repository": "https://github.com/xwartz/smartbanner",
+  "author": "stddup <stddup@gmail.com> (http://xwartz.github.com/)",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}

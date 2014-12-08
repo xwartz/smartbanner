@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="apple-itunes-app" content="app-id=626144601">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.5,user-scalable=yes">
+		<title>Smart App Banner</title>
+	</head>
+	<link rel="stylesheet" href="../css/smartbanner.css">
+	<body>
+		<h1>Smart App Banner</h1>
+		<script src="../smartbanner.js"></script>
+		<script>
+		  var banner = {
+		      icon: 'icon.png',               
+		      title: 'TickTick - Todo & Task List',
+		      author: 'Appest Limited',
+		      appStore: 'https://itunes.apple.com/app/tick-tick/id626144601',
+		      marketUrl: 'https://play.google.com/store/apps/details?id=com.ticktick.task',
+		      schemeIOS: 'ticktick://all.show.all',
+		      schemeAndroid: 'ticktick://view/task/',
+		      intentUrl: 'intent://scan/#Intent;scheme=ticktick;package=com.ticktick.task;end'
+		  };
+			smartbanner.init(banner)
+		</script>
+	</body>
+</html>
