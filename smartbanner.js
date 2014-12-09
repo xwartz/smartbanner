@@ -35,7 +35,8 @@
             marketUrl: null,          // the url of app for Android
             schemeIOS: null,          // the scheme url for iOS
             schemeAndroid: null,      // the scheme url for Android
-            intentUrl: null           // the intent url for chrome 25+
+            intentUrl: null,          // the intent url for chrome 25+
+            button: 'OPEN'            // the button text
         },
 
         init: function (option) {
@@ -44,6 +45,7 @@
             // If wechat, doesn't support.
             if(Browser.isWechat || Browser.isSafari) return;
 
+            // @todo  windows phone/firefox os,etc..
             if(!Platform.isAndroid && !Platform.isIOS) return;
 
             this.banner = option;
@@ -65,7 +67,7 @@
                          +       '<p class="rating">★★★★★</p>'
                          +     '</div>'
                          +     '<a id=js-open class=sb-button>'
-                         +        '<span>OPEN</span>'
+                         +        '<span>' + this.banner.button + '</span>'
                          +     '</a>'
                          + '</div>';
 
@@ -105,7 +107,7 @@
 
         // try to open the app, if not installed then open the store
         _try: function () {
-
+            var _this = this;
             if (Platform.isAndroid) {
                 // if chrome 25+, instead of using the actual URL scheme, use 'intent://'.
                 // see https://developer.chrome.com/multidevice/android/intents
@@ -123,7 +125,7 @@
                     var d = new Date;
                     window.setTimeout(function() {
                        if(600 > new Date - d) {
-                           window.location = this.banner.marketUrl;
+                           window.location = _this.banner.marketUrl;
                        }
                     }, 400);
                 }
@@ -132,7 +134,7 @@
 
                 // If fail to open the app, open the store
                 window.setTimeout(function() {
-                    window.location = this.banner.appStore;
+                    window.location = _this.banner.appStore;
                 }, 250);
             }
         }

@@ -21,7 +21,8 @@ var banner = {
     marketUrl: null,          // the url of app for Android
     schemeIOS: null,          // the scheme url for iOS
     schemeAndroid: null,      // the scheme url for Android
-    intentUrl: null           // the intent url for chrome 25+
+    intentUrl: null,          // the intent url for chrome 25+
+    button: 'OPEN'            // the button text
 }
 ```
 
