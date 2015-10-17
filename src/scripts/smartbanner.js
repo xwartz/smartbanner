@@ -27,19 +27,23 @@ const Browser = {
 
 class Smartbanner {
     constructor(options) {
-        this.options = Object.assign(options);
+        this.options = Object.assign(defaults, options);
         this.init();
     }
 
     init() {
+        
+        // @todo  windows phone/firefox os,etc..
+        if (!Platform.isAndroid && !Platform.isIOS) return;
+
         // Safari use Smart App Banner feature,
         // https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html
         // Wechat doesn't support.
         if (Browser.isWechat || Browser.isSafari) return;
-        // @todo  windows phone/firefox os,etc..
-        if (!Platform.isAndroid && !Platform.isIOS) return;
 
         this.sb = this.create();
+        this.show();
+        this.listen();
 
     }
 

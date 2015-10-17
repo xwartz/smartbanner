@@ -21,11 +21,13 @@
     font-size: 24px;
     color: #aaa; }
   .smartbanner .sb-icon {
+    float: left;
     width: 57px;
     height: 57px;
-    padding: 0 5px 0 2px; }
+    padding: 10px 5px 0 2px; }
   .smartbanner .sb-info {
-    display: inline-block; }
+    float: left;
+    margin-top: 15px; }
   .smartbanner p {
     line-height: 18px;
     font-size: 12px; }
@@ -41,3 +43,9 @@
     .smartbanner .sb-button:hover {
       color: #407bd4;
       outline: none; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }

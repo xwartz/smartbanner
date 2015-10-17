@@ -27,13 +27,15 @@
     }
 
     .sb-icon {
+        float: left;
         width: 57px;
         height: 57px;
-        padding: 0 5px 0 2px;
+        padding: 10px 5px 0 2px;
     }
 
     .sb-info {
-        display: inline-block;
+        float: left;
+        margin-top: 15px;
     }
 
     p {
@@ -58,4 +60,11 @@
             outline: none;
         }
     }
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
