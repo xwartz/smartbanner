@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+.smartbanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11111;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+    height: 78px;
+    border: 1px solid #eee;
+    line-height: 78px;
+    text-align: left;
+
+    .sb-container {
+        padding: 0 10px 0 5px;
+        color: #333;
+    }
+
+    .sb-close {
+        font-size: 24px;
+        color: #aaa;
+    }
+
+    .sb-icon {
+        width: 57px;
+        height: 57px;
+        padding: 0 5px 0 2px;
+    }
+
+    .sb-info {
+        display: inline-block;
+    }
+
+    p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+    .rank {
+        color: #ffd966;
+        font-size: 11px;
+    }
+    
+    .sb-button {
+        font-size: 16px;
+        float: right;
+        color: #3D92F2;
+
+        &:focus,
+        &:active,
+        &:hover {
+            color: #407bd4;
+            outline: none;
+        }
+    }
+}
