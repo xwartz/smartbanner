@@ -42,3 +42,6 @@ var banner = {
 其他情况，首先使用 `iframe` 尝试打开 [scheme](http://developer.android.com/guide/topics/manifest/data-element.html) 地址的方式；如果不成功，使用 `location` 地址，跳转到应用市场。
 
 `iOS` 下首先使用 `location` 地址尝试打开 `scheme`, 不成功就跳转到应用市场。
+
+### License
+MIT
