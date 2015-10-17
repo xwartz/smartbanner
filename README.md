@@ -4,7 +4,7 @@ smartbanner
 smartbanner like iOS's smart app banners 
 
 
-####usage
+#### Usage
 
 ###### Safari
 
