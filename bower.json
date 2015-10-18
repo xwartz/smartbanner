@@ -1,0 +1,23 @@
+{
+  "name": "smartbanner",
+  "version": "0.1.0",
+  "authors": [
+    "xwartz <stddup@gmail.com>"
+  ],
+  "description": "smartbanner like iOS's smart app banners",
+  "main": "smartbanner.js",
+  "moduleType": [],
+  "keywords": [
+    "smartbanner",
+    "banner"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xwartz/smartbanner",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
