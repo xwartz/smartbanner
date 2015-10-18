@@ -134,6 +134,4 @@ class Smartbanner {
     }
 }
 
-window.Smartbanner = Smartbanner;
-
 export default Smartbanner;

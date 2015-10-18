@@ -14,6 +14,7 @@
 ### 其他手机浏览器
 
 ```js
+import Smartbanner form 'smartbanner'
 var banner = {
     icon: null,               // the url of the app icon
     title: null,              // the title of the app
@@ -26,10 +27,7 @@ var banner = {
     button: 'OPEN',           // the button text
     rank: '★★★★★'         //  app rank
 }
-```
-
-```js
- new Smartbanner(banner)
+new Smartbanner(banner)
 ```
 
 ### Screenshot
