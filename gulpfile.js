@@ -37,7 +37,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
   gulp.src(dirs.scripts + '/*.js')
     .pipe(plumber())
-    .pipe(babel())
+    .pipe(babel({modules: 'umd'}))
     .pipe(gulp.dest(dirs.dest))
     .pipe(uglify())
     .pipe(rename({
