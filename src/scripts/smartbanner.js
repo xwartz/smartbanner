@@ -19,7 +19,7 @@ const Platform = {
 };
 
 const Browser = {
-    isSafari: /Safari/i.test(agent) && !/Chrome/i.test(agent),
+    isSafari: /Safari/i.test(agent) && /CriOS/i.test(agent) === false,
     isChrome: /Chrome/i.test(agent),
     isOpera: /Opera/i.test(agent),
     isWechat: /MicroMessenger/i.test(agent)
