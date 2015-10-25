@@ -3,6 +3,8 @@
 
 模拟 `iPhone` 上 `Safari` 浏览网站时显示的 `Smart App Banner`, 在各手机端浏览器打开应用, 使用 `ES6` 编写。
 
+手机浏览器打开demo http://xwartz.github.io/smartbanner/
+
 ### Safari
 
 在页面添加如下代码
